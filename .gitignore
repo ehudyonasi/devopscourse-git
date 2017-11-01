@@ -1,0 +1,33 @@
+# no bin files                                                                                                                                                                           
+
+bin/                                                                                                                                                                                  
+
+                                                                                                                                                                                         
+
+# ignore all dll files                                                                                                                                                                   
+
+*.dll                                                                                                                                                                                    
+
+                                                                                                                                                                                         
+
+# don't ignore my_special_dll                                                                                                                                                            
+
+!my_special_dll.dll                                                                                                                                                                      
+
+                                                                                                                                                                                         
+
+# ignore all log. files                                                                                                                                                                  
+
+*.log.*                                                                                                                                                                                  
+
+                                                                                                                                                                                         
+
+# ignore README file                                                                                                                                                                     
+
+README                                                                                                                                                                                  
+
+                                                                                                                                                                                         
+
+# but not in /docs                                                                                                                                                                       
+
+!docs/**/README 
