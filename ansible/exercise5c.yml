@@ -4,6 +4,7 @@
      - name: prompt user input
        pause: prompt="Please enter the first and last name"
        register: user_info
+     - name: printing user input
        debug:
          msg: "Hello {{ user_info.user_input }}"
 
