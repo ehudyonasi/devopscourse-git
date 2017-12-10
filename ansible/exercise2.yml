@@ -1,0 +1,24 @@
+---
+ - hosts: servers 
+   tasks:
+
+     - name: get date and time from servers
+       command: date
+  
+     - name: get servers name
+       command: hostname
+ 
+     - name: fetch /etc/hosts
+       fetch: src=/etc/hosts dest=allhosts
+       become: true
+
+     - name: ensure wget is installed
+       yum: name=wget state=latest 
+       become: true
+
+     - name: ensure wget is running
+       service: name=wget state=started enabled=yes
+    
+     - name: ensure syslog is running
+       service: name=syslog state=restarted enabled=yes
+    

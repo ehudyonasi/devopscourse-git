@@ -1,0 +1,9 @@
+---
+ - hosts: 127.0.0.1
+   tasks:
+     - name: prompt user input
+       pause: prompt="Please enter the first and last name"
+       register: user_info
+       debug:
+         msg: "Hello {{ user_info.user_input }}"
+
