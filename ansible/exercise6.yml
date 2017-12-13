@@ -1,0 +1,11 @@
+--- # This playbook will install mysql
+- hosts: servers
+  become: True
+  tasks:
+  - name: Install on redhat
+    yum: name=mysql state=latest
+    when: ansible_os_family == "RedHat"
+  
+  - name: Install on debian system
+    apt: name=mysql-server state=latest
+    when: ansible_os_family == "Debian"

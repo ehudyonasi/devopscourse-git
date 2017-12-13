@@ -1,0 +1,7 @@
+---
+- name: install apache
+  yum: name=httpd state=latest
+- name: Copy html files into server
+  copy: src=index.html dest=/var/www/html
+- name: Copy 404 html file into server
+  copy: src=404.html dest=/var/www/html

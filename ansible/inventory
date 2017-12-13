@@ -1,5 +1,5 @@
 [servers]
-node1 ansible_host=10.0.0.100 alias=foo 
-node2 ansible_host=10.0.0.192 alias=bar
+node1 ansible_host=10.0.0.100  
+node2 ansible_host=10.0.0.127 ansible_user=ubuntu
 
 

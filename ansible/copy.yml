@@ -1,0 +1,10 @@
+---
+ - hosts: node1
+   become: true
+   tasks:        
+     - name: copy ntp config file
+       copy:
+         src: /etc/yum.repos.d/ 
+         dest: /etc/yum.repos.d/
+       
+
