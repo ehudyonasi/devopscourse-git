@@ -2,7 +2,8 @@
 
 bin/                                                                                                                                                                                  
 
-                                                                                                                                                                                         
+# no retry ansible files
+*.retry
 
 # ignore all dll files                                                                                                                                                                   
 
